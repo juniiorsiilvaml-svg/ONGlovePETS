@@ -12,7 +12,20 @@ body {
     text-align: center;
     font-family: luckiestGuy, cursive;
     font-size: 40px;
-    a {
+}   
+a {
     text-decoration: none;  
     color: rgb(219, 217, 217);  
     text-shadow: 4px 4px 4px rgba(3, 3, 3, 0.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(182, 101, 101);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}

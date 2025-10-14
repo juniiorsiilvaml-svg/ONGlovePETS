@@ -53,3 +53,6 @@ p {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+selection {
+    color: rgb(219, 217, 217);
+}
