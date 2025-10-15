@@ -14,13 +14,13 @@
     box-sizing: border-box;
 }
 header {
-    background-color: rgb(159, 70, 94);
+    background-color: rgb(182, 101, 101);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 body {
-    background-color: rgb(163, 72, 105);
+    background-color: rgb(251, 133, 117);
     text-align: center;
     font-family: luckiestGuy, cursive;
     font-size: 40px;
@@ -39,6 +39,12 @@ ul {
     font-size: 40px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
+h2  {
+   text-shadow: 4px 4px 4px rgba(3, 3, 3, 0.3);
+    color: rgb(219, 217, 217);  
+    font-family: luckiestGuy, cursive;
+    
+}
 h3 {
     color: rgb(219, 217, 217);  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -53,6 +59,7 @@ p {
     margin-top: 12px;
     margin-bottom: 12px;
 }
-selection {
-    color: rgb(219, 217, 217);
+h5 {
+    color: rgb(219, 217, 217);  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }

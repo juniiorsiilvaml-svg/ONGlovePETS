@@ -7,6 +7,12 @@
     font-family: 'luckiestGuy'; 
     src: url('fonts/LuckiestGuy-Regular.ttf') format('truetype');
 }
+header {
+    background-color:rgb(182, 101, 101);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
 body {
     background-color: rgb(251, 133, 117);
     text-align: center;
@@ -23,9 +29,23 @@ a {
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    background-color: rgb(182, 101, 101);
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+h2  {
+    text-shadow: 4px 4px 4px rgba(3, 3, 3, 0.3);
+    color: rgb(219, 217, 217);  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+p {
+    color: rgb(219, 217, 217);  
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 19px;
+    font-family: frijole, cursive;
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+h5 {
+    text-shadow: 4px 4px 4px rgba(3, 3, 3, 0.3);
+    color: rgb(219, 217, 217);  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }

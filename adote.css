@@ -7,6 +7,12 @@
     font-family: 'luckiestGuy'; 
     src: url('fonts/LuckiestGuy-Regular.ttf') format('truetype');
 }
+header {
+    background-color: rgb(182, 101, 101);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
 body {
     background-color: rgb(251, 133, 117);
     text-align: center;
@@ -22,10 +28,4 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-header {
-    background-color: rgb(182, 101, 101);
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
