@@ -115,15 +115,18 @@ main p {
     flex-wrap: wrap;
 }
 
-.cta-actions a {
+.cta-actions a, 
+.btn-voluntario, 
+.formulario-voluntario button[type="submit"] {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
     text-align: center;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .cta-actions a.btn-primary {
@@ -146,6 +149,11 @@ main p {
     background-color: #e68900;
 }
 
+.btn-scale-up {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
 .projeto-item {
     padding: 20px;
     margin-bottom: 25px;
@@ -153,6 +161,12 @@ main p {
     background-color: #fafafa;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; 
+}
+
+.card-elevate {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .projeto-item h3 {
@@ -272,7 +286,6 @@ main p {
     border-radius: 5px;
     font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .formulario-voluntario button[type="submit"]:hover {

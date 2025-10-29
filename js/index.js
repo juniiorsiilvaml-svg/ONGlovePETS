@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
+
     const navMenu = document.querySelector('nav ul');
     const menuToggle = document.getElementById('menu-toggle-btn');
     const formVoluntario = document.querySelector('.formulario-voluntario');
-    const ctaSection = document.querySelector('.cta-voluntario');
     
 
     if (menuToggle && navMenu) {
@@ -11,27 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    
-    if (formVoluntario && ctaSection) {
+    if (formVoluntario) {
         formVoluntario.addEventListener('submit', function(event) {
             event.preventDefault(); 
 
             const emailInput = document.getElementById('email');
-            if (!emailInput.value.includes('@') || emailInput.value.trim().length < 5) {
+            if (!emailInput || !emailInput.value.includes('@') || emailInput.value.trim().length < 5) {
                 alert('Por favor, insira um endereço de e-mail válido.');
                 return; 
             }
             
+            const parentSection = formVoluntario.closest('.cta-voluntario, .secao-voluntario');
+            if (!parentSection) {
+                console.error('Seção pai para mensagem de sucesso não encontrada.');
+                return;
+            }
+
             const mensagemSucesso = document.createElement('div');
             mensagemSucesso.className = 'mensagem-sucesso';
             mensagemSucesso.textContent = '✅ Sua candidatura foi enviada com sucesso! Agradecemos o seu interesse e entraremos em contato em breve.';
             
-            const mensagemExistente = ctaSection.querySelector('.mensagem-sucesso');
+            const mensagemExistente = parentSection.querySelector('.mensagem-sucesso');
             if (mensagemExistente) {
                 mensagemExistente.remove();
             }
 
-            ctaSection.insertBefore(mensagemSucesso, formVoluntario);
+            parentSection.insertBefore(mensagemSucesso, formVoluntario);
             formVoluntario.reset();
 
             setTimeout(() => {
@@ -44,4 +49,37 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Formulário Enviado (Simulação):', data);
         });
     }
+
+    function setupButtonHoverEffect() {
+        const buttons = document.querySelectorAll(
+            '.btn-primary, .btn-secondary, .btn-voluntario, .cta-actions a, .formulario-voluntario button[type="submit"]'
+        );
+
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.classList.add('btn-scale-up');
+            });
+
+            button.addEventListener('mouseout', () => {
+                button.classList.remove('btn-scale-up');
+            });
+        });
+    }
+
+    function setupProjectItemHoverEffect() {
+        const projectItems = document.querySelectorAll('.projeto-item');
+
+        projectItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.classList.add('card-elevate');
+            });
+
+            item.addEventListener('mouseout', () => {
+                item.classList.remove('card-elevate');
+            });
+        });
+    }
+
+    setupButtonHoverEffect(); 
+    setupProjectItemHoverEffect(); 
 });
