@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Voluntário | Semente do Bem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Semente do Bem</h1>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle-btn">☰</button>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Projeto.html">Nossos Projetos</a></li>
+                <li><a href="Voluntário.html">Seja Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>🤝 Seja um Voluntário</h2>
+        <p>O coração da "Semente do Bem" bate graças à energia e dedicação de nossos voluntários. Sua contribuição, seja de tempo, conhecimento ou afeto, é a força que transforma a vida de tantas pessoas.</p>
+
+        <section class="secao-voluntario">
+            <h3>Por que Plantar esta Semente?</h3>
+            <ul>
+                <li><strong>Impacto Real:</strong> Veja de perto a diferença que seu tempo faz na vida de uma família ou indivíduo.</li>
+                <li><strong>Crescimento Pessoal:</strong> Desenvolva novas habilidades e amplie sua visão de mundo.</li>
+                <li><strong>Comunidade:</strong> Faça parte de uma rede de solidariedade, conhecendo pessoas com o mesmo ideal.</li>
+                <li><strong>Flexibilidade:</strong> Encontre uma vaga que se encaixe na sua rotina e disponibilidade.</li>
+            </ul>
+        </section>
+
+        <section class="secao-voluntario">
+            <h3>Onde Você Pode Ajudar</h3>
+            <p>Temos diversas áreas que precisam do seu talento. Encontre o lugar ideal para a sua semente:</p>
+
+            <div class="areas-atuacao">
+                <h4>Educação e Cursos (Raízes do Saber)</h4>
+                <p>Dar aulas de reforço escolar, informática, artesanato ou auxiliar em oficinas profissionalizantes.</p>
+
+                <h4>Apoio Operacional e Logístico (Mesa Farta)</h4>
+                <p>Auxiliar na coleta, separação e distribuição de doações, e na logística dos eventos.</p>
+
+                <h4>Acolhimento e Suporte (Abraço Amigo)</h4>
+                <p>Participar de rodas de conversa, oferecer escuta ativa ou, se for profissional, dar suporte psicológico supervisionado.</p>
+            </div>
+        </section>
+
+        <section class="secao-voluntario cta-voluntario">
+            <h3>Seu Primeiro Passo: Cadastro</h3>
+            <p>Para começar sua jornada, preencha o formulário abaixo. Nossa equipe entrará em contato para um bate-papo e um treinamento de boas-vindas.</p>
+
+            <form action="#" method="POST" class="formulario-voluntario">
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone (WhatsApp):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                <label for="profissao">Profissão / Área de Formação:</label>
+                <input type="text" id="profissao" name="profissao">
+
+                <label for="interesse">Área de maior interesse:</label>
+                <select id="interesse" name="interesse" required>
+                    <option value="" selected disabled>Selecione sua área principal</option>
+                    <option value="Educacao">Educação e Cursos</option>
+                    <option value="Operacional">Apoio Operacional e Logístico</option>
+                    <option value="Acolhimento">Acolhimento e Suporte</option>
+                    <option value="Comunicacao">Comunicação e Eventos</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <label for="disponibilidade">Qual sua disponibilidade semanal (Ex: 4h por semana, Terças de manhã, etc.)?</label>
+                <input type="text" id="disponibilidade" name="disponibilidade" required>
+
+                <label for="mensagem">Conte-nos sobre sua motivação e experiência (Opcional):</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <button type="submit">Enviar Minha Inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Semente do Bem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
